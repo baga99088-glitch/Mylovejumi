@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MENYALA CELL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: white;
+    }
+
+    header {
+      background: black;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      color: #00ff88;
+      font-size: 32px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #000, #003b1f);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .wa-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: #00c853;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #161616;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+      border: 1px solid #222;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .harga {
+      color: #00ff88;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      background: #00c853;
+      color: white;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #222;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MENYALA CELL</h1>
+    <nav>
+      <a href="#hp">iPhone & Android</a>
+      <a href="#aksesoris">Aksesoris</a>
+      <a href="#voucher">Voucher</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>iPhone & Android Terlengkap</h2>
+    <p>
+      Ready iPhone 11 sampai iPhone 16, Oppo, Vivo, Android lainnya,
+      voucher Telkomsel, Axis, Tri, anti gores, silikon dan charger.
+    </p>
+
+    <a class="wa-btn" href="https://wa.me/62895631733538" target="_blank">
+      Chat WhatsApp
+    </a>
+  </section>
+
+  <section id="hp">
+    <h2>iPhone & Android</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>iPhone 11</h3>
+          <div class="harga">Harga Japri WA</div>
+          <a class="btn" href="https://wa.me/62895631733538">Tanya Harga</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1632661674596-df8be070a5c5?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>iPhone 13 Pro Max</h3>
+          <div class="harga">Harga Japri WA</div>
+          <a class="btn" href="https://wa.me/62895631733538">Tanya Harga</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>iPhone 15 Pro</h3>
+          <div class="harga">Harga Japri WA</div>
+          <a class="btn" href="https://wa.me/62895631733538">Tanya Harga</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Oppo Series</h3>
+          <div class="harga">Harga Japri WA</div>
+          <a class="btn" href="https://wa.me/62895631733538">Tanya Harga</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="aksesoris">
+    <h2>Aksesoris HP</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601593346740-925612772716?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Softcase Silikon</h3>
+          <div class="harga">Mulai Rp 25.000</div>
+          <a class="btn" href="https://wa.me/62895631733538">Pesan</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Anti Gores</h3>
+          <div class="harga">Mulai Rp 20.000</div>
+          <a class="btn" href="https://wa.me/62895631733538">Pesan</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?q=80&w=1200&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>Charger Fast Charging</h3>
+          <div class="harga">Mulai Rp 50.000</div>
+          <a class="btn" href="https://wa.me/62895631733538">Pesan</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="voucher">
+    <h2>Voucher Internet</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Voucher Telkomsel</h3>
+          <div class="harga">Ready Stock</div>
+          <a class="btn" href="https://wa.me/62895631733538">Order</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Voucher Axis</h3>
+          <div class="harga">Ready Stock</div>
+          <a class="btn" href="https://wa.me/62895631733538">Order</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Voucher Tri (3)</h3>
+          <div class="harga">Ready Stock</div>
+          <a class="btn" href="https://wa.me/62895631733538">Order</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kontak" class="hero">
+    <h2>Hubungi MENYALA CELL</h2>
+    <p>Klik tombol di bawah untuk langsung chat WhatsApp.</p>
+
+    <a class="wa-btn" href="https://wa.me/62895631733538">
+      0895631733538
+    </a>
+  </section>
+
+  <footer>
+    © 2026 MENYALA CELL • Website Toko HP & Aksesoris
+  </footer>
+
+</body>
+</html>
