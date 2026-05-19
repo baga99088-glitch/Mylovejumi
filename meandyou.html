@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+overflow-x:hidden;
+color:white;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom,#000,#111,#000);
+z-index:-2;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:55px;
+color:#f5d7a1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.9;
+color:#ddd;
+}
+
+.music-box{
+margin-top:40px;
+background:#111;
+padding:25px;
+border-radius:25px;
+box-shadow:0 0 25px rgba(255,215,150,0.15);
+}
+
+.music-box h2{
+margin-bottom:15px;
+color:#f5d7a1;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:60px;
+}
+
+.card{
+background:#111;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(255,255,255,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+.card img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+.love{
+margin-top:70px;
+background:#111;
+padding:40px;
+border-radius:25px;
+text-align:center;
+line-height:2;
+font-size:20px;
+box-shadow:0 0 25px rgba(255,215,150,0.08);
+}
+
+.love h2{
+margin-top:25px;
+color:#f5d7a1;
+font-size:35px;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+color:#999;
+font-size:14px;
+}
+
+.heart{
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:fall linear infinite;
+z-index:-1;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10px);
+opacity:1;
+}
+100%{
+transform:translateY(100vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+<h1>Untuk Kamu ❤️</h1>
+
+<p>
+Terima kasih sudah hadir di hidupku.<br>
+Kamu adalah rumah tempat aku pulang,<br>
+dan alasan kenapa aku selalu tersenyum.<br><br>
+
+Aku mungkin bukan yang sempurna,<br>
+tapi aku akan selalu berusaha jadi yang terbaik untukmu.<br><br>
+
+Aku sayang kamu hari ini,<br>
+besok dan selamanya. 💖
+</p>
+
+<div class="music-box">
+
+<h2>🎵 Tunggu Apa Lagi - Paul Partohap</h2>
+
+<audio controls autoplay loop style="width:100%;">
+<source src="lagu.mp3" type="audio/mp3">
+</audio>
+
+</div>
+
+</div>
+
+<div class="gallery">
+
+<div class="card">
+<img src="foto1.jpg">
+</div>
+
+<div class="card">
+<img src="foto2.jpg">
+</div>
+
+<div class="card">
+<img src="foto3.jpg">
+</div>
+
+</div>
+
+<div class="love">
+
+Bersamamu, waktu terasa begitu indah.<br>
+Setiap detik bersamamu adalah hadiah terindah dari Tuhan.<br><br>
+
+Aku berjanji akan selalu ada untukmu,<br>
+menjagamu, mencintaimu,<br>
+dan membuatmu bahagia selama aku bisa. ❤️<br><br>
+
+<h2>I LOVE YOU SO MUCH 💕</h2>
+
+</div>
+
+<div class="footer">
+Dibuat dengan cinta ❤️
+</div>
+
+</div>
+
+<script>
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(Math.random()*5+5)+"s";
+
+heart.style.fontSize=
+(Math.random()*20+10)+"px";
+
+document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
